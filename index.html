@@ -4,31 +4,48 @@
 <head>
     <title>Calculator</title>
     <style>
-        .Calculator {
-    width: 225px;
-    background-color:wheat;
-    border-radius: 5px;
-    padding: 15px;
+.Calculator {
+    width: 90%;
+    max-width: 320px;
+    background-color: wheat;
+    border-radius: 12px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
-    
+    margin: auto;
 }
-h1{
+
+h1 {
     color: #333333;
+    text-align: center;
+    font-size: 1.5rem;
 }
 
 #display {
     width: 100%;
-    padding: 7px;
-    margin-bottom: 10px;
+    padding: 12px;
+    margin-bottom: 15px;
+    font-size: 1.2rem;
 }
 
 .btn {
-    width: 50px;
-    height: 50px;
+    width: 65px;
+    height: 65px;
     border-radius: 50%;
     border: 0;
-    margin-bottom: 10px;
+    margin: 6px;
+    font-size: 1.1rem;
+}
+        
+@media (min-width: 768px) {
+    .Calculator {
+        max-width: 280px;
+    }
+
+    .btn {
+        width: 55px;
+        height: 55px;
+    }
 }
     </style>
 </head>
@@ -88,4 +105,5 @@ function answer(){
 }
     </script>
 </body>
+
 </html>
